@@ -1,0 +1,90 @@
+.rick {
+  margin-bottom: 250px;
+}
+
+.rick img {
+  width: 100%;
+}
+
+.rick .pic {
+  margin-top: -70px;
+  position: relative;
+  z-index: -2;
+}
+
+.rick #h3 {
+  position: absolute;
+  font-weight: 600;
+}
+
+.rick #h4 {
+  position: absolute;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-left: -200px;
+  font-size: 2rem;
+}
+
+.rick #h5 {
+  position: absolute;
+  font-weight: 600;
+  margin-top: -20px;
+  text-transform: capitalize;
+  margin-left: -0px;
+  font-size: 2rem;
+}
+
+.rick .ma {
+  padding-top: 100px;
+}
+
+.rick a {
+  color: black;
+}
+
+.rick .sunu {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .rick {
+    margin-bottom: 50px;
+  }
+  .rick img {
+    width: 100%;
+  }
+  .rick .pic {
+    margin-top: -10px;
+    position: relative;
+    z-index: -2;
+  }
+  .rick #h3 {
+    position: absolute;
+    font-weight: 600;
+    font-weight: 1rem;
+    margin-top: -30px;
+  }
+  .rick #h4 {
+    position: absolute;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-left: -50px;
+    font-size: 1rem;
+  }
+  .rick #h5 {
+    font-weight: 600;
+    margin-top: -0px;
+    margin-left: -30px;
+    font-size: 1rem;
+  }
+  .rick .ma {
+    padding-top: 70px;
+  }
+  .rick a {
+    color: black;
+  }
+  .rick .sunu {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

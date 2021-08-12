@@ -1,0 +1,87 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Gilroy;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Regular.ttf');
+}
+.maintop {
+  margin-bottom: 100px;
+}
+.top {
+  position: relative;
+  margin-top: 100px;
+  img {
+    width: 100%;
+  }
+  .words {
+    padding-top: 180px;
+    .title {
+      margin-left: 200px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 50px;
+      position: absolute;
+      top: 8%;
+      font-weight: 600;
+      width: 100%;
+    }
+  }
+  #pic {
+    position: relative;
+    z-index: -50;
+  }
+}
+.explore {
+  margin-top: -200px;
+  img {
+    width: 40%;
+  }
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+  }
+}
+@media screen and (max-width: 767px) {
+  .maintop {
+    margin-bottom: 50px;
+  }
+  .top {
+    position: relative;
+    margin-top: 100px;
+    img {
+      width: 100%;
+    }
+    .words {
+      padding-top: 200px;
+      .title {
+        margin-left: 60px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 8%;
+        font-weight: 600;
+        width: 100%;
+      }
+    }
+    #pic {
+      position: relative;
+      z-index: -50;
+    }
+  }
+  .explore {
+    margin-top: -0px;
+    img {
+      width: 50%;
+    }
+    a {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: black;
+    }
+  }
+}

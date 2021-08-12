@@ -1,0 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
+.story {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  img {
+    width: 80%;
+  }
+  .text {
+    margin-top: 70px;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  a {
+    color: black;
+  }
+}
+@media screen and (max-width:767px) {
+.story {
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+  }
+  .text {
+    margin-top: 0px;
+    font-size: 12px;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+} 
+}

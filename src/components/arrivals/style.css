@@ -1,0 +1,116 @@
+.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.thumbnail .arrowleft,
+.thumbnail .arrowright {
+  width: 50px;
+  cursor: pointer;
+}
+
+.thumbnail .del {
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+  background-color: black;
+  border: none;
+  font-size: 11px;
+  color: white;
+  padding: 7px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thumbnail .del:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.thumbnail .discount {
+  border: none;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thumbnail .discount:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  background-color: lightgray;
+  color: black;
+}
+
+.thumbnail .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.thumbnail .products img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.thumbnail .products .thumb {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  width: 100%;
+}
+
+.thumbnail .products .thumb h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.thumbnail .products .thumb h5 {
+  font-size: 17px;
+}
+
+.thumbnail .products .thumb .text {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    margin-bottom: 100px;
+  }
+  .thumbnail .arrowleft,
+  .thumbnail .arrowright {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

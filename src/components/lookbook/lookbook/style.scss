@@ -1,0 +1,80 @@
+.rick {
+  margin-bottom: 250px;
+  img {
+    width: 100%;
+  }
+  .pic {
+    margin-top: -70px;
+    position: relative;
+    z-index: -2;
+  }
+  #h3 {
+    position: absolute;
+    font-weight: 600;
+  }
+  #h4 {
+    position: absolute;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-left: -200px;
+    font-size: 2rem;
+  }
+  #h5 {
+    position: absolute;
+    font-weight: 600;
+    margin-top: -20px;
+    text-transform: capitalize;
+    margin-left: -0px;
+    font-size: 2rem;
+  }
+  .ma {
+    padding-top: 100px;
+  }
+  a {
+    color: black;
+  }
+  .sunu {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rick {
+    margin-bottom: 50px;
+    img {
+      width: 100%;
+    }
+    .pic {
+      margin-top: -10px;
+      position: relative;
+      z-index: -2;
+    }
+    #h3 {
+      position: absolute;
+      font-weight: 600;
+      font-weight: 1rem;
+      margin-top: -30px;
+    }
+    #h4 {
+      position: absolute;
+      font-weight: 600;
+      margin-top: 0px;
+      margin-left: -50px;
+      font-size: 1rem;
+    }
+    #h5 {
+      font-weight: 600;
+      margin-top: -0px;
+      margin-left: -30px;
+      font-size: 1rem;
+    }
+    .ma {
+      padding-top: 70px;
+    }
+    a {
+      color: black;
+    }
+    .sunu {
+      text-align: center;
+    }
+  }
+}

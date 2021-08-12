@@ -1,0 +1,36 @@
+footer {
+  height: 60vh;
+  background-color: whitesmoke;
+  padding: 50px;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 60vh;
+    text-align: left;
+    padding: 20px 5px;
+  }
+  footer h3 {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

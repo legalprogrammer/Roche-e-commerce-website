@@ -1,0 +1,85 @@
+.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.thumbnail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 150px;
+  transition: 0.4s;
+  .arrowleft,
+  .arrowright {
+    width: 50px;
+    cursor: pointer;
+  }
+  .del {
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+    background-color: black;
+    border: none;
+    font-size: 11px;
+    color: white;
+    padding: 7px 10px;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .discount {
+    border: none;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.01);
+      background-color: lightgray;
+      color: black;
+    }
+  }
+  .products {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    img {
+      width: 20rem;
+      height: 20rem;
+    }
+    .thumb {
+      transition: 0.5s;
+      margin: 10px;
+      width: 100%;
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      h5 {
+        font-size: 17px;
+      }
+      .text {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  .thumbnail {
+    margin-bottom: 100px;
+    .arrowleft,
+    .arrowright {
+      width: 50px;
+    }
+  }
+}
