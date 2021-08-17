@@ -17,7 +17,7 @@ const Cedric = () => {
       <Container className='cedric'>
         <h2 className='title'>Cedric jacquemyn</h2>
         <Row>
-          <Col>
+          <Col sm>
             <div className='same'>
               <img src={Cedricman} alt='image' data-aos="fade-left" />
               <br />
@@ -33,7 +33,7 @@ const Cedric = () => {
               <img src={Cedricmann} alt='image' data-aos="fade-left"  />
             </div>
           </Col>
-          <Col xs={6}>
+          <Col sm>
             <img src={Cedricl} alt='image' className='small' data-aos="fade-right"  />
             <p className='text' data-aos="fade-right"  >
               One of the 2010 alumni of the Royal Antwerp Academy, fashion

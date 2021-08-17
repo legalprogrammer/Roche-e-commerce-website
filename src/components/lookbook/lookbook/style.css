@@ -30,7 +30,7 @@
   font-weight: 600;
   margin-top: -20px;
   text-transform: capitalize;
-  margin-left: -0px;
+  margin-left: 70px;
   font-size: 2rem;
 }
 
@@ -52,6 +52,7 @@
   }
   .rick img {
     width: 100%;
+    margin-top: 20px;
   }
   .rick .pic {
     margin-top: -10px;
@@ -62,23 +63,24 @@
     position: absolute;
     font-weight: 600;
     font-weight: 1rem;
-    margin-top: -30px;
+    margin-top: -80px;
   }
   .rick #h4 {
     position: absolute;
     font-weight: 600;
-    margin-top: 0px;
-    margin-left: -50px;
-    font-size: 1rem;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 1.5rem;
   }
   .rick #h5 {
     font-weight: 600;
-    margin-top: -0px;
-    margin-left: -30px;
-    font-size: 1rem;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 1.5rem;
   }
   .rick .ma {
-    padding-top: 70px;
+    padding-top: 100px;
+    margin-bottom: 30px;
   }
   .rick a {
     color: black;

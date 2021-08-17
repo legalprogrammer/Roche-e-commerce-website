@@ -1,14 +1,23 @@
 import React from 'react';
 import logo from '../pictures/logo.png';
-import cart from '../pictures/cart.gif';
+import cartimg from '../pictures/cart.gif';
 import person from '../pictures/person.png';
 import search from '../pictures/search.png';
 import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-const NavBar = () => {
+import Basket from './cart';
+import { connect } from 'react-redux';
+const NavBar = ({ cart }) => {
+  const [count, setcount] = React.useState(0);
   const [state, setstate] = React.useState(false);
+  React.useEffect(() => {
+    let countnum = 0;
+    cart.forEach((item) => {
+      countnum += item.qty;
+    });
+    setcount(countnum);
+  }, [cart, count]);
   const shownnav = () => {
     if (!state) {
       document.querySelector('.mobile').style.top = '0%';
@@ -22,32 +31,39 @@ const NavBar = () => {
   const hidenav = () => {
     closennav();
   };
+  const showcart = () => {
+    if (!state) {
+      document.querySelector('.basket').style.right = '0%';
+    }
+  };
 
   return (
     <>
       <Container fluid className='header'>
         <Row className='navbar'>
-          <Col xs={5}>
+          <Col>
             <ul className='list'>
               <li className='links'>
-                <a href='#'>shop</a>
+                <a href='/'>home</a>
               </li>
               <li className='links'>
-                <a href='#'>about us</a>
+                <a href='/shop'>shop</a>
               </li>
               <li className='links'>
-                <a href='/projects'>projects</a>
+                <a href='/about'>about us</a>
               </li>
               <li className='links'>
-                <a href='#'>journal</a>
+                <a href='/projects'>designers</a>
               </li>
               <li className='links'>
-                <a href='#'>podcasts</a>
+                <a href='/journal'>journal</a>
               </li>
             </ul>
           </Col>
-          <Col className='logo' xs={3}>
-            <img src={logo} alt='logo' />
+          <Col className='logo'>
+            <a href='/'>
+              <strong>Roche Wears</strong>
+            </a>
           </Col>
           <Col className='social'>
             <i>
@@ -56,28 +72,32 @@ const NavBar = () => {
             <i>
               <img src={search} alt='link' />
             </i>
-            <i>
-              <img src={cart} alt='link' />
+            <i onClick={showcart}>
+              <img src={cartimg} alt='link' />
+              <div className='count'>{count}</div>
             </i>
           </Col>
         </Row>
       </Container>
+      <div className='basket'>
+        <Basket />
+      </div>
       <div className='mobile'>
         <ul className='list'>
           <li className='links' onClick={hidenav}>
-            <a href='#'>shop</a>
+            <a href='/'>home</a>
           </li>
           <li className='links' onClick={hidenav}>
-            <a href='#'>about us</a>
+            <a href='/shop'>shop</a>
           </li>
           <li className='links' onClick={hidenav}>
-            <a href='#'>projects</a>
+            <a href='/about'>about us</a>
           </li>
           <li className='links' onClick={hidenav}>
-            <a href='#'>journal</a>
+            <a href='/projects'>designers</a>
           </li>
           <li className='links' onClick={hidenav}>
-            <a href='#'>podcasts</a>
+            <a href='/journal'>journal</a>
           </li>
         </ul>
         <button onClick={closennav}>close</button>
@@ -86,7 +106,14 @@ const NavBar = () => {
         <Container>
           <section>
             <div>
-              <img src={logo} alt='' />
+              <button onClick={showcart}>
+                Cart <div className='count'>{count}</div>
+              </button>
+            </div>
+            <div>
+              <a href='/'>
+                <strong>Roche Wears</strong>
+              </a>
             </div>
             <div>
               <button onClick={shownnav}>menu</button>
@@ -97,5 +124,9 @@ const NavBar = () => {
     </>
   );
 };
-
-export default NavBar;
+const mapstatetoprops = (state) => {
+  return {
+    cart: state.shop.cart,
+  };
+};
+export default connect(mapstatetoprops)(NavBar);

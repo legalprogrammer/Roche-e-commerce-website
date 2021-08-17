@@ -1,0 +1,99 @@
+.project {
+  padding: 100px 30px 50px;
+  .carton {
+    height: 50vh;
+    margin: 20px;
+    width: 100%;
+    transition: 0.4s;
+    padding: 20px;
+    cursor: pointer;
+    .text{
+      margin-top: 250px;
+    }
+    a{
+      text-decoration: blanchedalmond;
+    }
+    strong {
+      color: whitesmoke;
+      letter-spacing: 2px;
+      font-weight: 400;
+      transition: all ease-in-out 250ms;
+      &::after {
+        background-color: blanchedalmond;
+        content: '';
+        display: block;
+        height: 0.4vh;
+        transition: all ease-in-out 250ms;
+        width: 0%;
+      }
+    }
+    &:hover {
+      strong {
+        color: lightgrey;
+        margin-top: 240px;
+        &::after {
+          height: 0.3vh;
+          width: 100%;
+        }
+      }
+    }
+  }
+  #one {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../pictures/m.jpg);
+    background-size: cover;
+  }
+  #two {
+    background-size: cover;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../pictures/ced3.jpg);
+  }
+  #three {
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../pictures/topimg.jpg);
+  }
+  #four {
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../pictures/owen.png);
+  }
+  #five {
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../pictures/socks.png);
+  }
+}
+@media screen and (max-width: 767px) {
+  .project {
+    padding: 20px;
+    .carton {
+      padding: 20px;
+      width: 90%;
+    }
+    strong {
+      
+    }
+  }
+}

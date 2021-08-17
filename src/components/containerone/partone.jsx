@@ -16,7 +16,7 @@ const CartonOne = () => {
       <Container fluid className='top'>
         <Container>
           <Row>
-            <Col xs={6} className='words' data-aos='fade-right'>
+            <Col  className='words' data-aos='fade-right' sm>
               <h1 className='title'>Roche L’imperméable</h1>
               <p className='text'>
                 Find the latest news about designers in Avant-grande fashion.
@@ -24,7 +24,7 @@ const CartonOne = () => {
                 and buy curated products
               </p>
             </Col>
-            <Col data-aos='fade-left' id='pic'>
+            <Col data-aos='fade-left' id='pic' sm>
               <img src={topimg} alt='picture' />
             </Col>
           </Row>

@@ -1,6 +1,4 @@
 import React from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,13 +6,10 @@ import story from '../pictures/story.png';
 import './style.css';
 
 const Story = () => {
-  React.useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <Container className='story'>
       <Row>
-        <Col className='text' data-aos="fade-right">
+        <Col className='text' data-aos="fade-right" sm>
           <h1>Our story</h1>
           <p>
             Roche L’imperméable is founded by two brothers named mel and chase
@@ -31,7 +26,7 @@ const Story = () => {
           </p>
           <a href="">READ MORE</a>
         </Col>
-        <Col xs={5} data-aos="fade-left">
+        <Col  data-aos="fade-left" sm>
           <img src={story} alt='ourstory' />
         </Col>
       </Row>

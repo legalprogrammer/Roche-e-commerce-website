@@ -12,7 +12,6 @@ import Story from '../story/story';
 const Home = () => {
   return (
     <div>
-      <NavBar />
       <CartonOne />
       <Story />
       <Arrival />

@@ -1,0 +1,136 @@
+.journal {
+  background-color: black;
+  height: 450vh;
+  color: white;
+  padding-top: 200px;
+}
+
+.journal .book {
+  margin-bottom: 100px;
+}
+
+.journal img {
+  width: 100%;
+}
+
+.journal button {
+  background-color: #111;
+  border: none;
+  margin-top: 20px;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.journal button:hover {
+  background-color: white;
+  color: black;
+}
+
+.journal .text {
+  padding-top: 100px;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.journal .text h5 {
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.journal .text h2 {
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+.journal .text h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: lightgray;
+}
+
+#van {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#van h5 {
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+#van h2 {
+  margin-bottom: 40px;
+  font-stretch: condensed;
+  letter-spacing: 3px;
+  color: gray;
+  font-weight: 300;
+}
+
+#van img {
+  width: 50%;
+  margin-top: 20px;
+}
+
+#van P {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#van .list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#van .list ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+#van .list ul li {
+  margin-top: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#van .back {
+  margin-top: 100px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .journal {
+    height: 450vh;
+  }
+  .journal .text {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .journal .text h5 {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .journal .text h2 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+  .journal .text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: lightgray;
+    font-size: 13px;
+  }
+  .journal .text button {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

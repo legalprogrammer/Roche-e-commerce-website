@@ -29,6 +29,7 @@ html {
   }
   .story img {
     width: 100%;
+    margin-top: 40px;
   }
   .story .text {
     margin-top: 0px;

@@ -15,10 +15,10 @@ const Wang = () => {
       <Container className='wang'>
         <h2 className='title'>RIGARDS X UMA WANG</h2>
         <Row>
-          <Col data-aos="fade-right">
+          <Col data-aos="fade-right" sm>
             <img src={wangman} alt='image' />
           </Col>
-          <Col xs={5} data-aos="fade-left">
+          <Col  data-aos="fade-left" sm>
             <img src={wang} alt='image' className='small' />
             <p className='text'>
               Artisanal designer Uma Wang has built one of the most beautiful

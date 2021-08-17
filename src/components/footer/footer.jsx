@@ -8,30 +8,30 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col xs={1}>
+          <Col xs={1} sm>
             
           </Col>
-          <Col>
+          <Col sm>
             <h3>Directory</h3>
             <ul>
               <li>
-                <a href=''>HOME</a>
+                <a href='/'>HOME</a>
               </li>
               <li>
                 <a href=''>SHOP</a>
               </li>
               <li>
-                <a href=''>PROJECTS</a>
+                <a href='/projects'>PROJECTS</a>
               </li>
               <li>
                 <a href=''>JOURNAL</a>
               </li>
               <li>
-                <a href=''>OUR STORY</a>
+                <a href='/about'>OUR STORY</a>
               </li>
             </ul>
           </Col>
-          <Col>
+          <Col sm>
             <h3>customer care</h3>
             <ul>
               <li>

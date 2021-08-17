@@ -1,8 +1,12 @@
+#root{
+ overflow-x: hidden;
+}
 .navbar {
   text-align: center;
   ul {
     display: flex;
     width: 100%;
+    margin-left: auto;
     justify-content: space-around;
     align-items: center;
     li {
@@ -22,6 +26,18 @@
       opacity: 0.6;
     }
   }
+  .logo {
+    strong {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 .header {
   position: fixed;
@@ -32,6 +48,16 @@
   padding: 10px 10px;
   width: 100%;
   box-sizing: border-box;
+  cursor: pointer;
+  .count {
+    position: absolute;
+    right: 11%;
+    top: 0%;
+    background-color: black;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 20px;
+  }
 }
 .mobile {
   display: none;
@@ -39,12 +65,83 @@
 .mobile-nav {
   display: none;
 }
+.basket {
+  z-index: 9999;
+  top: 0%;
+  right: -100%;
+  background-color: black;
+  height: 100vh;
+  width: 40%;
+  color: white;
+  text-align: left;
+  position: fixed;
+  padding: 10px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: 0.4s;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  img {
+    width: 100%;
+  }
+  div {
+    margin: 10px;
+  }
+  .text {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+  }
+  .times {
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+  }
+  .total {
+    position: fixed;
+    bottom: -1%;
+    border-top: 2px solid white;
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: black;
+    button{
+      font-weight: 600;
+      background-color: white;
+      text-transform: capitalize;
+      padding: 7px 10px;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
-   #root{
+  #root {
     overflow-x: hidden;
   }
   .header {
     display: none;
+  }
+  .basket{
+    width: 100%;
+    .total{
+     width: 100%;
+    }
   }
   .mobile-nav {
     display: block;
@@ -58,15 +155,33 @@
     box-sizing: border-box;
     box-shadow: 0px 1px 2px 1px lightgrey;
     background-color: white;
+    text-align: center;
     section {
       display: flex;
       justify-content: space-between;
     }
+    strong {
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
     button {
-      margin-top: 10px;
       border: none;
       outline: none;
       background-color: transparent;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .count{
+      position: absolute;
+      top: 0%;
+      margin-left:30px;
+      padding: 5px;
+      border: 20px;
+      color: red;
+      font-weight: 900;
     }
   }
   .mobile {
@@ -102,4 +217,5 @@
       background-color: transparent;
     }
   }
+  
 }

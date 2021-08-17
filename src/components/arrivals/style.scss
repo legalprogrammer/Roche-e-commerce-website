@@ -69,6 +69,17 @@
       }
     }
   }
+  #view {
+    background-color: white;
+    margin-top: 10px;
+    padding: 7px 70px;
+    transition: all ease-in-out 50ms;
+    &:hover {
+      border: 1px solid black;
+      background-color: gray;
+      color: white;
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .title {

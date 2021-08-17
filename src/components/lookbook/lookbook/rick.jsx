@@ -15,13 +15,13 @@ const Rick = () => {
     <div>
       <Container className='rick' data-aos="fade-right">
         <Row>
-          <Col>
+          <Col sm>
             <h3 id='h3'>RICK OWENS MENS FW21 GETHSEMANE</h3>
           </Col>
-          <Col xs={6} className='pic'>
+          <Col sm className='pic'>
             <img src={owen} alt='' />
           </Col>
-          <Col>
+          <Col sm>
             <p>
               Dark romance and broken beauty fill the collections of Rick Owens,
               the LA-born master of glamorous grunge (or ‘glunge’ as he calls
@@ -34,10 +34,10 @@ const Rick = () => {
       </Container>
       <Container className='rick' data-aos="fade-left">
         <Row>
-          <Col xs={8} className='pic'>
+          <Col sm className='pic'>
             <img src={owenn} alt='' />
           </Col>
-          <Col>
+          <Col sm>
             <h3 id='h4'>MA+ BY MAURIZIO AMADEI FW21</h3>
             <p className='ma'>
               M.A+ (pronounced "em - across") is the label of Italian
@@ -50,8 +50,8 @@ const Rick = () => {
       </Container>
       <Container className='rick' data-aos="fade-right">
         <Row>
-          <Col></Col>
-          <Col className='sunu'>
+          <Col sm></Col>
+          <Col className='sunu' sm>
             <h3 id='h5'>
               Jan-Jan van Essche FW21 <br /> - Project #9 'SUNU'
             </h3>
@@ -62,7 +62,7 @@ const Rick = () => {
             </p>
             <a href=''>READ MORE</a>
           </Col>
-          <Col xs={6} className='pic'>
+          <Col sm className='pic'>
             <img src={sunu} alt='' />
           </Col>
         </Row>

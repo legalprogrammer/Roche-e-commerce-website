@@ -1,3 +1,7 @@
+#root {
+  overflow-x: hidden;
+}
+
 .navbar {
   text-align: center;
 }
@@ -7,6 +11,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-left: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -34,6 +39,18 @@
   opacity: 0.6;
 }
 
+.navbar .logo strong {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.navbar .logo a {
+  color: black;
+  text-decoration: none;
+}
+
 .header {
   position: fixed;
   z-index: 999;
@@ -44,6 +61,17 @@
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
+}
+
+.header .count {
+  position: absolute;
+  right: 11%;
+  top: 0%;
+  background-color: black;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 20px;
 }
 
 .mobile {
@@ -54,12 +82,104 @@
   display: none;
 }
 
+.basket {
+  z-index: 9999;
+  top: 0%;
+  right: -100%;
+  background-color: black;
+  height: 100vh;
+  width: 40%;
+  color: white;
+  text-align: left;
+  position: fixed;
+  padding: 10px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.basket .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.basket img {
+  width: 100%;
+}
+
+.basket div {
+  margin: 10px;
+}
+
+.basket .text {
+  width: 100%;
+}
+
+.basket input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.basket .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket .times {
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+
+.basket .total {
+  position: fixed;
+  bottom: -1%;
+  border-top: 2px solid white;
+  width: 50%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+.basket .total button {
+  font-weight: 600;
+  background-color: white;
+  text-transform: capitalize;
+  padding: 7px 10px;
+}
+
 @media screen and (max-width: 767px) {
   #root {
     overflow-x: hidden;
   }
   .header {
     display: none;
+  }
+  .basket {
+    width: 100%;
+  }
+  .basket .total {
+    width: 100%;
   }
   .mobile-nav {
     display: block;
@@ -77,6 +197,7 @@
     -webkit-box-shadow: 0px 1px 2px 1px lightgrey;
             box-shadow: 0px 1px 2px 1px lightgrey;
     background-color: white;
+    text-align: center;
   }
   .mobile-nav section {
     display: -webkit-box;
@@ -86,11 +207,28 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .mobile-nav strong {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
   .mobile-nav button {
-    margin-top: 10px;
     border: none;
     outline: none;
     background-color: transparent;
+  }
+  .mobile-nav a {
+    text-decoration: none;
+    color: black;
+  }
+  .mobile-nav .count {
+    position: absolute;
+    top: 0%;
+    margin-left: 30px;
+    padding: 5px;
+    border: 20px;
+    color: red;
+    font-weight: 900;
   }
   .mobile {
     display: block;

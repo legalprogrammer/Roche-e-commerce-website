@@ -56,16 +56,13 @@ body {
       width: 100%;
     }
     .words {
-      padding-top: 200px;
+      padding-top: 70px;
       .title {
-        margin-left: 60px;
+        margin-left: 30px;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 1.5rem;
         position: absolute;
-        top: 8%;
-        font-weight: 600;
-        width: 100%;
       }
     }
     #pic {
@@ -74,9 +71,9 @@ body {
     }
   }
   .explore {
-    margin-top: -0px;
+    margin-top: 70px;
     img {
-      width: 50%;
+      width: 100%;
     }
     a {
       text-transform: uppercase;
@@ -84,4 +81,7 @@ body {
       color: black;
     }
   }
+  .maintop {
+  margin-bottom: 50px;
+}
 }
