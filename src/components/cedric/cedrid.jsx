@@ -42,7 +42,7 @@ const Cedric = () => {
               eponymous label during FW11 Paris mensweek.
             </p>
             <div>
-              <a href='' data-aos="fade-right" >READ MORE</a>
+              <a href='/CEDRICJACQUEMYN' data-aos="fade-right" >READ MORE</a>
             </div>
           </Col>
         </Row>

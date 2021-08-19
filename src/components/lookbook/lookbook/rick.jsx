@@ -13,7 +13,7 @@ const Rick = () => {
   }, []);
   return (
     <div>
-      <Container className='rick' data-aos="fade-right">
+      <Container className='rick' data-aos='fade-right'>
         <Row>
           <Col sm>
             <h3 id='h3'>RICK OWENS MENS FW21 GETHSEMANE</h3>
@@ -29,10 +29,11 @@ const Rick = () => {
               rock’n’roll attitude has attracted celebrity fans such as Rihanna,
               Nicole Richie and Madonna.
             </p>
+            <a href='/james'>READ MORE</a>
           </Col>
         </Row>
       </Container>
-      <Container className='rick' data-aos="fade-left">
+      <Container className='rick' data-aos='fade-left'>
         <Row>
           <Col sm className='pic'>
             <img src={owenn} alt='' />
@@ -44,11 +45,11 @@ const Rick = () => {
               self-taught designer Maurizio Amadei. Maurizio is known for his
               innovative folding techniques, pattern designs, minimal
             </p>
-            <a href=''>READ MORE</a>
+            <a href='/amadelfw'>READ MORE</a>
           </Col>
         </Row>
       </Container>
-      <Container className='rick' data-aos="fade-right">
+      <Container className='rick' data-aos='fade-right'>
         <Row>
           <Col sm></Col>
           <Col className='sunu' sm>
@@ -60,7 +61,7 @@ const Rick = () => {
               self-taught designer Maurizio Amadei. Maurizio is known for his
               innovative folding techniques, pattern designs, minimal
             </p>
-            <a href=''>READ MORE</a>
+            <a href='/sunufw'>READ MORE</a>
           </Col>
           <Col sm className='pic'>
             <img src={sunu} alt='' />

@@ -24,7 +24,7 @@ const Story = () => {
             Avant-Garde fashion and designers online in the most righteous way
             possible.
           </p>
-          <a href="">READ MORE</a>
+          <a href="/about">READ MORE</a>
         </Col>
         <Col  data-aos="fade-left" sm>
           <img src={story} alt='ourstory' />

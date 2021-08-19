@@ -34,9 +34,6 @@ const Wang = () => {
               acidic cleaners on your frames. Please see the care guide for tips
               on keeping your frames in great condition.
             </p>
-            <div>
-              <a href=''>READ MORE</a>
-            </div>
           </Col>
         </Row>
       </Container>
