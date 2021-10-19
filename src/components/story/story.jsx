@@ -1,15 +1,20 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import story from '../pictures/story.png';
 import './style.css';
 
 const Story = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <Container className='story'>
+    <Container className='story' data-aos='fade-up'>
       <Row>
-        <Col className='text' data-aos="fade-right" sm>
+        <Col className='text' sm>
           <h1>Our story</h1>
           <p>
             Roche L’imperméable is founded by two brothers named mel and chase
@@ -24,9 +29,9 @@ const Story = () => {
             Avant-Garde fashion and designers online in the most righteous way
             possible.
           </p>
-          <a href="/about">READ MORE</a>
+          <a href='/about'>READ MORE</a>
         </Col>
-        <Col  data-aos="fade-left" sm>
+        <Col data-aos='fade-left' sm>
           <img src={story} alt='ourstory' />
         </Col>
       </Row>

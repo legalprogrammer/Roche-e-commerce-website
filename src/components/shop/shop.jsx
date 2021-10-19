@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './style.css';
-import NavBar from '../nav/nav';
 import { connect } from 'react-redux';
 import { addtocart, loaditem } from '../../redux/shopping/shopaction';
 import { Link } from 'react-router-dom';
 const Shop = ({ products, addtocart, loaditem }) => {
-  document.title = 'Shop - all products';
+  document.title = 'Shop - all products';    
+    
   return (
     <div>
       <Container>

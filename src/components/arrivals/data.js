@@ -1,5 +1,5 @@
 import silver from '../pictures/a7.jpg';
-import glass from '../pictures/a13.jpg';
+import glass from '../pictures/k3.jpg';
 import james from '../pictures/a1.jpg';
 import red from '../pictures/a9.jpg';
 import yellow from '../pictures/a10.jpg';

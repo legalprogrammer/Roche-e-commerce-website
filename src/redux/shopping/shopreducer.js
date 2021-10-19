@@ -1,17 +1,17 @@
 import * as actionTypes from './shoptype';
-import silver from '../../components/pictures/a7.jpg';
-import glass from '../../components/pictures/a13.jpg';
-import james from '../../components/pictures/a1.jpg';
-import red from '../../components/pictures/a9.jpg';
-import yellow from '../../components/pictures/a10.jpg';
-import corus from '../../components/pictures/a14.jpg';
-import ama1 from '../../components/pictures/ama1.png';
-import ama2 from '../../components/pictures/ama2.png';
-import ama3 from '../../components/pictures/ama3.png';
-import ama4 from '../../components/pictures/ama4.png';
-import ama5 from '../../components/pictures/ama5.png';
-import ama6 from '../../components/pictures/ama6.png';
-import ama7 from '../../components/pictures/ama7.png';
+import silver from '../../components/pictures/k5.jpg';
+import glass from '../../components/pictures/k3.jpg';
+import james from '../../components/pictures/k4.jpg';
+import red from '../../components/pictures/k7.jpg';
+import yellow from '../../components/pictures/k10.jpg';
+import corus from '../../components/pictures/kl1.png';
+import ama1 from '../../components/pictures/m6.jpg';
+import ama2 from '../../components/pictures/m7.jpg';
+import ama3 from '../../components/pictures/m8.jpg';
+import ama4 from '../../components/pictures/v4.jpg';
+import ama5 from '../../components/pictures/vi1.jpg';
+import ama6 from '../../components/pictures/kl7.jpg';
+import ama7 from '../../components/pictures/kl6.jpg';
 import belt from '../../components/pictures/a4.jpg';
 import ponch from '../../components/pictures/a15.jpg';
 import coat from '../../components/pictures/a5.jpg';
@@ -22,7 +22,7 @@ const intialState = {
     {
       id: 1,
       img: silver,
-      names: '925 SILVER SCARF',
+      names: 'Bugee Hoodie',
       price: '599',
       maker: 'DEEPTI',
       classname: 'new',
@@ -30,7 +30,7 @@ const intialState = {
     {
       id: 2,
       maker: 'MA+',
-      names: 'BUFFALO HORN SUNGLASSES',
+      names: 'Black Leather bag',
       price: '699',
       img: glass,
       classname: 'exclusive',
@@ -39,7 +39,7 @@ const intialState = {
       id: 3,
       classname: 'designer',
       img: james,
-      names: 'JAMES KEARNS FOR LUCENTEMENT',
+      names: 'James lucent dress',
       price: '968',
       maker: 'JAMES KEARNS FOR LUCENTEMENT',
     },
@@ -72,7 +72,7 @@ const intialState = {
       id: 7,
       img: red,
       classname: 'designer',
-      names: 'DORSAL BLOOD LEATHER JACKET',
+      names: 'DORSAL LEATHER JACKET',
       maker: 'ISAAC SELLAM',
       price: '1792',
     },
@@ -80,7 +80,7 @@ const intialState = {
       id: 8,
       img: yellow,
       classname: 'jacket',
-      names: 'DORSAL YELLOW LEATHER JACKET',
+      names: 'DORSAL JACKET',
       maker: 'ISAAC SELLAM',
       price: '1792',
     },
@@ -96,7 +96,7 @@ const intialState = {
       id: 10,
       img: corus,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'wende Shirt',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },
@@ -104,7 +104,7 @@ const intialState = {
       id: 11,
       img: ama1,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'Black wende Hoodie',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },
@@ -112,31 +112,31 @@ const intialState = {
       id: 12,
       img: ama2,
       classname: 'bags',
-      names: 'CORROSO',
-      price: '589',
+      names: 'Black wende Hoodie',
+      price: '889',
       maker: 'ESDE FOR LUCENTEMENT',
     },
     {
       id: 13,
       img: ama3,
       classname: 'bags',
-      names: 'CORROSO',
-      price: '589',
+      names: 'Black wende Hoodie',
+      price: '899',
       maker: 'ESDE FOR LUCENTEMENT',
     },
     {
       id: 14,
       img: ama4,
       classname: 'bags',
-      names: 'CORROSO',
-      price: '589',
+      names: 'Navy Blue wende Hoodie',
+      price: '679',
       maker: 'ESDE FOR LUCENTEMENT',
     },
     {
       id: 15,
       img: ama5,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'Navy Blue wende Hoodie',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },
@@ -144,7 +144,7 @@ const intialState = {
       id: 16,
       img: ama6,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'Wende Hoodie',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },
@@ -152,7 +152,7 @@ const intialState = {
       id: 17,
       img: ama7,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'Gray Wende Hoodie',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },
@@ -160,23 +160,31 @@ const intialState = {
       id: 18,
       img: corus,
       classname: 'bags',
-      names: 'CORROSO',
-      price: '589',
+      names: 'Wende white shirt',
+      price: '289',
       maker: 'ESDE FOR LUCENTEMENT',
     },
     {
       id: 19,
       img: corus,
       classname: 'bags',
-      names: 'CORROSO',
-      price: '589',
+      names: 'Wende white shirt - new version',
+      price: '389',
       maker: 'ESDE FOR LUCENTEMENT',
     },
     {
       id: 20,
       img: corus,
       classname: 'bags',
-      names: 'CORROSO',
+      names: 'Wende white shirt-old version',
+      price: '589',
+      maker: 'ESDE FOR LUCENTEMENT',
+    },
+    {
+      id: 21,
+      img: corus,
+      classname: 'bags',
+      names: 'Wende white shirt-limited edition',
       price: '589',
       maker: 'ESDE FOR LUCENTEMENT',
     },

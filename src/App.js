@@ -22,12 +22,14 @@ import Syneria from './components/journal/exclusive';
 import Amadelfw from './components/journal/amadel';
 import Sunufw from './components/journal/sunu';
 import Viewitem from './components/nav/viewitem';
-import NavBar from './components/nav/nav'
+import NavBar from './components/nav/nav';
+import Checkout from './components/nav/checkout';
+
 function App({ currentitems }) {
   return (
     <div className='App'>
       <Router>
-       <NavBar/>
+        <NavBar />
         <Switch>
           <Route exact path='/'>
             <Home />
@@ -70,6 +72,9 @@ function App({ currentitems }) {
           </Route>
           <Route path='/sunufw'>
             <Sunufw />
+          </Route>
+          <Route path='/checkout'>
+            <Checkout />
           </Route>
           {!currentitems ? (
             <Redirect to='/shop' />

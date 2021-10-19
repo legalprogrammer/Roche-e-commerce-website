@@ -6,14 +6,12 @@ import picone from '../pictures/d1.jpg';
 import pictwo from '../pictures/d2.jpg';
 import picthree from '../pictures/d3.jpg';
 import picfr from '../pictures/d4.jpg';
-import picfive from '../pictures/d5.jpg';
 import './project.css';
 import Footer from '../footer/footer';
 const Derti = () => {
   document.title = 'Our project-Derti barts re-edition designs';
   return (
     <div>
-      <NavBar />
       <div className='derti'>
         <Container fluid>
           <center>

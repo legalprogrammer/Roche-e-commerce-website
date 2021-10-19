@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../pictures/logo.png';
 import cartimg from '../pictures/cart.gif';
 import person from '../pictures/person.png';
 import search from '../pictures/search.png';
@@ -8,6 +7,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Basket from './cart';
 import { connect } from 'react-redux';
+import Checkout from './checkout';
 const NavBar = ({ cart }) => {
   const [count, setcount] = React.useState(0);
   const [state, setstate] = React.useState(false);
@@ -82,6 +82,9 @@ const NavBar = ({ cart }) => {
       <div className='basket'>
         <Basket />
       </div>
+      <div className='checkout' id="checkout">
+         <Checkout/>
+      </div>
       <div className='mobile'>
         <ul className='list'>
           <li className='links' onClick={hidenav}>
@@ -103,7 +106,7 @@ const NavBar = ({ cart }) => {
         <button onClick={closennav}>close</button>
       </div>
       <div className='mobile-nav'>
-        <Container>
+        <Container fluid>
           <section>
             <div>
               <button onClick={showcart}>

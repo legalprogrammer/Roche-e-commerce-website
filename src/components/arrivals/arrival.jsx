@@ -36,23 +36,19 @@ const Arrival = ({ products, addtocart, loaditem }) => {
             return (
               <div key={id} className='thumb'>
                 <div>
-                  <img src={img} alt='productimg' />
+                  <Link to={`/item/${id}`}>
+                    <img
+                      src={img}
+                      alt='productimg'
+                      onClick={() => loaditem(product)}
+                    />
+                  </Link>
                 </div>
                 <div className='text'>
                   <h4>{names}</h4>
                   <h5>{maker}</h5>
                   <h6>€{price}</h6>
                 </div>
-                <Link to={`/item/${id}`}>
-                  <button id='view' onClick={() => loaditem(product)}>
-                    view item
-                  </button>
-                </Link>
-                <a>
-                  <Button className='discount' onClick={() => addtocart(id)}>
-                    Add to cart
-                  </Button>
-                </a>
               </div>
             );
           })}

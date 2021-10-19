@@ -1,15 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { removecart,loaditem } from '../../redux/shopping/shopaction';
-const Basket = ({ cart, removecart, loaditem}) => {
-
+import { removecart, loaditem } from '../../redux/shopping/shopaction';
+const Basket = ({ cart, removecart}) => {
   const [totalitems, settotalitems] = React.useState(0);
   const [totalprice, settotalprice] = React.useState(0);
   const [state, setstate] = React.useState(false);
-  
+
   const hidecart = () => {
     if (!state) {
       document.querySelector('.basket').style.right = '-100%';
+    }
+  };
+  const showcheckout = () => {
+    if (!state) {
+      hidecart()
+      document.querySelector('.checkout').style.left = '0%';
     }
   };
   React.useEffect(() => {
@@ -46,11 +51,17 @@ const Basket = ({ cart, removecart, loaditem}) => {
                   <br />
                   <h6>{maker}</h6>
                   <h5>${price}</h5>
-                  <button onClick={() => removecart(id)}>remove item</button>
+                  <button onClick={() => removecart(id)} className="remove">remove item</button>
                 </div>
                 <div>
                   <label htmlFor='qty'>Qty</label>
-                  <input type='number' name='qty' id='qty' value={qty} min='1' />
+                  <input
+                    type='number'
+                    name='qty'
+                    id='qty'
+                    value={qty}
+                    min='1'
+                  />
                 </div>
               </div>
             </>
@@ -65,7 +76,7 @@ const Basket = ({ cart, removecart, loaditem}) => {
           <br />
           <span>${totalprice}</span>
         </div>
-        <button>proceed to checkout</button>
+        <button onClick={showcheckout}>proceed to checkout</button>
       </div>
     </>
   );
@@ -78,8 +89,9 @@ const maptoprops = (state) => {
 const maptodelete = (dispatch) => {
   return {
     removecart: (id) => dispatch(removecart(id)),
-    loaditem: (item) => dispatch(loaditem(item))
+    loaditem: (item) => dispatch(loaditem(item)),
   };
 };
+
 
 export default connect(maptoprops, maptodelete)(Basket);

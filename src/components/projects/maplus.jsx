@@ -12,7 +12,6 @@ const Maplus = () => {
   document.title = 'Our project- MA + lucentement  designs';
   return (
     <div>
-      <NavBar />
       <div className='derti'>
         <Container fluid>
           <center>

@@ -1,17 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from '../nav/nav';
 import picone from '../pictures/k1.jpg';
 import pictwo from '../pictures/k2.jpg';
-import picthree from '../pictures/k3.jpg';
 import './project.css';
 import Footer from '../footer/footer';
 const James = () => {
   document.title = 'Our project - James kearns designs';
   return (
     <div>
-      <NavBar />
       <div className='derti'>
         <Container fluid>
           <center>
@@ -39,10 +36,10 @@ const James = () => {
         <Container>
           <Row>
             <Col sm>
-              <img src={picone} alt='' />
+              <img src={picone} alt='img' />
             </Col>
             <Col sm>
-              <img src={pictwo} alt='' />
+              <img src={pictwo} alt='img' />
             </Col>
           </Row>
         </Container>
@@ -51,7 +48,7 @@ const James = () => {
         <Container>
           <Row>
             <Col sm>
-              <img src={picthree} alt='' />
+              <img src="" alt='img' />
             </Col>
           </Row>
         </Container>

@@ -12,7 +12,6 @@ const Jack = () => {
   document.title = 'Our project- CEDRIC JACQUEMYN';
   return (
     <div>
-      <NavBar />
       <div className='derti'>
         <Container fluid>
           <center>

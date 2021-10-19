@@ -1,13 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import NavBar from './nav';
 import './item.css';
 import { addtocart } from '../../redux/shopping/shopaction';
 import Footer from '../footer/footer';
 const Viewitem = ({ currentitems,addtocart }) => {
   return (
     <>
-      <NavBar />
       <div className='viewitems'>
         <div>
           <img src={currentitems.img} alt='' />
